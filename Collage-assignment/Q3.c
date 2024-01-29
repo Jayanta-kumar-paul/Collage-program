@@ -5,18 +5,19 @@ int main()
     printf("Enter a number :");
     scanf("%d",&num);
     temp=num;
-    while(num>0)
+    while(num!=0)
     {
         rev=num%10;
         sum=sum*10+rev;
         num=num/10;
     }
-    if(temp=sum)
+    if(temp==sum)
     {
-        printf("%d\n is a palindrome number.",temp);
+        printf("%d is a palindrome number.",temp);
     }
     else
     {
-        printf("%d\n is a Not palindrome number.",temp);
+        printf("%d is a Not palindrome number.",temp);
     }
+    return 0;
 }
