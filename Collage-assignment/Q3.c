@@ -1,3 +1,4 @@
+// Write a program in C to test a number is palindrome or not.
 #include<stdio.h>
 int main()
 {
@@ -21,3 +22,8 @@ int main()
     }
     return 0;
 }
+// Enter a number :121
+// 121 is a palindrome number.
+// Enter a number :5642
+// 5642 is a Not palindrome number.
+

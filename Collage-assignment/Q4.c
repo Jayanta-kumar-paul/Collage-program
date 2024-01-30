@@ -1,3 +1,5 @@
+// Write a program in C to print and calculate the following series:  
+// 2-4+6-8+10…n term = Result
 #include <stdio.h>
 int main()
 {
