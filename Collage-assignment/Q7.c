@@ -3,19 +3,21 @@
 //       * *
 //     * * *
 //   * * * *
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    float num,p,sum=1.0 ,i;
-    printf("Enter the number:");
-    scanf("%f",&num);
-    printf("1+");
-    for( i=2.0;i<=num;i++)
+    int rows = 4;
+    for (int i = 0; i < rows; i++)
     {
-        printf("1/%.0f+",i*i);
-        p=1/(i*i);
-        sum=sum+p;
+        for (int j = 0; j < 2 * (rows - i) - 1; j++)
+        {
+            printf(" ");
+        }
+        for (int k = 0; k <= i; k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
     }
-    printf("\b=%.2f",sum);
     return 0;
 }
