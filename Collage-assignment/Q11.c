@@ -1,11 +1,16 @@
+// 11.	Write a program in C to short an array in Descending order.
 #include <stdio.h>
-
 int main() 
 {
-    int a[5] = {45, 22, 100, 66, 37};
-    int n = 5, t = 0;
-
-    // Nested loops to compare and swap elements
+    int a[' '];
+    int n , t = 0;
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
     for (int i = 0; i < n; i++)
      {
         for (int j = i + 1; j < n; j++) 
@@ -18,8 +23,7 @@ int main()
             }
         }
     }
-
-    // Print the sorted array in descending order
+     printf(" The sorted array in descending order:\n");
     for (int i = 0; i < n; i++)
     {
         printf("%d ", a[i]);
@@ -27,3 +31,12 @@ int main()
 
     return 0;
 }
+// Enter the number of elements in the array: 5
+// Enter 5 elements:
+// 23
+// 54
+// 98
+// 99
+// 10
+// The sorted array in descending order:
+// 99 98 54 23 10
