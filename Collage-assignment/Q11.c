@@ -1,41 +1,29 @@
-// Pattern code in C
-#include <stdio.h> 
-  
+#include <stdio.h>
+
 int main() 
-{ 
-    int rows = 5; 
-  
-    // first loop to print all rows 
-    for (int i = 0; i < rows; i++) { 
-  
-        // inner loop 1 to print white spaces 
-        for (int j = 0; j < (rows - i) ; j++)
-        { 
-            printf(" "); 
-        } 
-  
-        // inner loop 2 to print star * character 
-        for (int k = 0; k <=  i ; k++) 
-        { 
-            printf("* "); 
-        } 
-        printf("\n"); 
-    } 
-    for (int i = rows; i >= 0; i--)
-    { 
-  
-        // inner loop 1 to print white spaces 
-        for (int j =(rows-i); j >0 ; j--) 
-        { 
-            printf(" "); 
-        } 
-  
-        // inner loop 2 to print star * character 
-        for (int k = i; k >=0 ; k--) 
-        { 
-            printf("* "); 
-        } 
-            printf("\n");
+{
+    int a[5] = {45, 22, 100, 66, 37};
+    int n = 5, t = 0;
+
+    // Nested loops to compare and swap elements
+    for (int i = 0; i < n; i++)
+     {
+        for (int j = i + 1; j < n; j++) 
+        {
+            if (a[i] < a[j]) 
+            {
+                t = a[i];
+                a[i] = a[j];
+                a[j] = t;
+            }
+        }
     }
-    return 0; 
+
+    // Print the sorted array in descending order
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", a[i]);
+    }
+
+    return 0;
 }
