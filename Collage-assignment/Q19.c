@@ -1,0 +1,1 @@
+// 19.	Write a program in C to test a number is prime or not using dynamic memory allocation.

@@ -1,9 +1,9 @@
 // 11.	Write a program in C to short an array in Descending order.
 #include <stdio.h>
-int main() 
+int main()
 {
     int a[' '];
-    int n , t = 0;
+    int n, t = 0;
     printf("Enter the number of elements in the array: ");
     scanf("%d", &n);
     printf("Enter %d elements:\n", n);
@@ -12,10 +12,10 @@ int main()
         scanf("%d", &a[i]);
     }
     for (int i = 0; i < n; i++)
-     {
-        for (int j = i + 1; j < n; j++) 
+    {
+        for (int j = i + 1; j < n; j++)
         {
-            if (a[i] < a[j]) 
+            if (a[i] < a[j])
             {
                 t = a[i];
                 a[i] = a[j];
@@ -23,7 +23,7 @@ int main()
             }
         }
     }
-     printf(" The sorted array in descending order:\n");
+    printf(" The sorted array in descending order:\n");
     for (int i = 0; i < n; i++)
     {
         printf("%d ", a[i]);

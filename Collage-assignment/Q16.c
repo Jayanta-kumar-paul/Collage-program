@@ -1,0 +1,1 @@
+// 16.	Write a program in C to swap to numbers use pointers.

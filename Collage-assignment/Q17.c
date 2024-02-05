@@ -1,0 +1,1 @@
+// 17.	Write a program in C to find factorial of a given number by recursive method.

@@ -1,0 +1,1 @@
+// 18.	Write a program in C to multiply two metrics.
