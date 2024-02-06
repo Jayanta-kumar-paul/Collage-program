@@ -9,7 +9,7 @@ int mian()
     {
         temp = i;
         sum = 0;
-        while (temp != 0)
+        while (temp!=0)
         {
             rev = temp % 10;
             temp = temp / 10;
@@ -20,7 +20,6 @@ int mian()
             printf("%3d", i);
         }
     }
-    printf("\n");
     return 0;
 }
 // Enter the range:500
