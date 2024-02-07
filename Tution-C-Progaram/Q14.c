@@ -1,5 +1,5 @@
+// 14. Write a program in C to count the number of vowels, consonants and digits in a given string.
 #include <stdio.h>
-#include <ctype.h> // For tolower() function
 
 int main()
 {
@@ -20,7 +20,7 @@ int main()
             ++vowels;
         }
         // If it is not a vowel and an alphabet, it is a consonant
-        else if ((line[i] >= 'a' && line[i] <= 'z'))
+        else if (line[i] >= 'a' && line[i] <= 'z')
         {
             ++consonants;
         }
