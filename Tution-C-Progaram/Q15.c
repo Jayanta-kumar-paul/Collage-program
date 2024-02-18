@@ -39,3 +39,7 @@ int main()
 
     return 0;
 }
+// Enter the coefficients a, b, c: 2
+// 3
+// 4
+// The roots are -0.75 + 1.20i and -0.75 - 1.20i

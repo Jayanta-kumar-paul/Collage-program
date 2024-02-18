@@ -1,45 +1,41 @@
+// 14.	Write a program in C to count number of vowels, consonants and digits in a given string.
 #include <stdio.h>
-#include <ctype.h> // For tolower() function
-
+#include <ctype.h>
 int main()
 {
-    char line[150];
-    int vowels = 0, consonants = 0, digits = 0, spaces = 0;
+    char str[100];
+    int vowels = 0;
+    int consonants = 0;
+    int digits = 0;
 
-    printf("Enter a line of string: ");
-    fgets(line, sizeof(line), stdin);
+    printf("Enter your string : ");
+    fgets(str, sizeof(str), stdin);
 
-    for (int i = 0; line[i] != '\0'; ++i)
+    for (int i = 0; str[i] != '\0'; i++)
     {
-        // Convert character to lowercase
-        line[i] = tolower(line[i]);
-
-        // Check if the character is a vowel
-        if (line[i] == 'a' || line[i] == 'e' || line[i] == 'i' || line[i] == 'o' || line[i] == 'u')
+        if (isalpha(str[i]))
         {
-            ++vowels;
+            char ch = tolower(str[i]);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            {
+                vowels++;
+            }
+            else
+            {
+                consonants++;
+            }
         }
-        // If it is not a vowel and an alphabet, it is a consonant
-        else if ((line[i] >= 'a' && line[i] <= 'z'))
+        else if (isdigit(str[i]))
         {
-            ++consonants;
-        }
-        // Check if the character is a digit
-        else if (line[i] >= '0' && line[i] <= '9')
-        {
-            ++digits;
-        }
-        // Check if the character is an empty space
-        else if (line[i] == ' ')
-        {
-            ++spaces;
+            digits++;
         }
     }
-
     printf("Vowels: %d\n", vowels);
     printf("Consonants: %d\n", consonants);
     printf("Digits: %d\n", digits);
-    printf("White spaces: %d\n", spaces);
-
     return 0;
 }
+// Enter your string : JayantaKumar912
+// Vowels: 5
+// Consonants: 7
+// Digits: 3
