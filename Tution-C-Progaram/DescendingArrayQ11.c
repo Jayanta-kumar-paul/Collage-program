@@ -31,3 +31,12 @@ int main()
 
     return 0;
 }
+// Enter the number of elements in the array: 5
+// Enter 5 elements:
+// 12
+// 98
+// 45
+// 65
+// 99
+//  The sorted array in descending order:
+// 99 98 65 45 12 

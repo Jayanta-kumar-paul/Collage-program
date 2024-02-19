@@ -3,15 +3,16 @@
 
 int main()
 {
-    int i, n = 10; // Number of terms to print
-    int t1 = 0, t2 = 1, nextTerm;
+    int n = 10; // Number of terms to print
+    int t1 = 0, t2 = 1;
+     int nextTerm;
 
     printf("Fibonacci Series: %d, %d, ", t1, t2);
 
-    for (i = 3; i <= n; ++i)
+    for (int i = 3; i <= n; ++i)
     {
         nextTerm = t1 + t2;
-        printf("%d, ", nextTerm);
+        printf("%3d ,", nextTerm);
         t1 = t2;
         t2 = nextTerm;
     }

@@ -13,10 +13,10 @@ int main()
         int fact = 1;
         for (int i = 1; i <= digit; i++)
         {
-            fact = fact * i;
+            fact = fact * i; //   fact*=i;
         }
-        sum = sum + fact;
-        temp = temp / 10;
+        sum = sum + fact; //   sum+=fact;
+        temp = temp / 10; //    temp/=10;
     }
     if (sum == num)
     {

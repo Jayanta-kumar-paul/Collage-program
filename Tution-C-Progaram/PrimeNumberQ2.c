@@ -3,7 +3,7 @@
 
 int main()
 {
-    int i, prime, up, low, n;
+    int  prime, up, low;
 
     printf("ENTER THE LOWER LIMIT: ");
     scanf("%d", &low);
@@ -14,10 +14,10 @@ int main()
     if (low >= 2)
     {
         printf("PRIME NUMBERS ARE:\n ");
-        for (n = low + 1; n < up; n++)
+        for (int n = low + 1; n < up; n++)
         {
             prime = 1;
-            for (i = 2; i < n / 2; i++)
+            for (int i = 2; i < n / 2; i++)
             {
                 if (n % i == 0)
                 {

@@ -7,18 +7,18 @@
 
 int main()
 {
-    int i, j, n;
+    int n;
 
     printf("Enter the number of rows: ");
     scanf("%d", &n);
 
-    for (i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        for (j = 1; j < i; j++)
+        for (int j = 1; j < i; j++)
         {
             printf("  "); // Print spaces
         }
-        for (j = i; j <= n; j++)
+        for (int j = i; j <= n; j++)
         {
             printf("* "); // Print stars
         }

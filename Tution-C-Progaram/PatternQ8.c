@@ -6,7 +6,9 @@
 #include <stdio.h>
 int main()
 {
-    int rows = 5;
+    int rows;
+    printf("Enter the rows: ");
+    scanf("%d",&rows);
     for (int i = 1; i <=rows; i++)
     {
         for (int j = 0; j <rows-i; j++)
@@ -16,7 +18,7 @@ int main()
         int c=1;
         for(int k=1;k<=i;k++)
         {
-            printf("%d",c);
+            printf("%d ",c);
             c=c*(i-k)/k;
         }
         printf("\n");
