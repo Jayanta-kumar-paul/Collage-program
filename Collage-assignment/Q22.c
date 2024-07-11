@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main()
-{
+ {
     int a[' '][' '],b[' '][' '], c[' '][' '],r1,r2,c1,c2;
     printf("Enter elements  of matrix : ");
     scanf("%d%d", &r1,&c1);
