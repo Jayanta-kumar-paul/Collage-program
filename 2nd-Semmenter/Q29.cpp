@@ -10,7 +10,7 @@ void readIntegers(int *arr, int size)
     }
 }
 
-void printAscending(int *arr, int size)
+void Ascending(int *arr, int size)
 {
     cout << "Array elements in ascending order:\n";
     for (int i = 0; i < size; i++)
@@ -20,7 +20,7 @@ void printAscending(int *arr, int size)
     cout << endl;
 }
 
-void printDescending(int *arr, int size)
+void Descending(int *arr, int size)
 {
     std::cout << "Array elements in descending order:\n";
     for (int i = size - 1; i >= 0; i--)
@@ -49,8 +49,8 @@ int main()
         }
     }
 
-    printAscending(arr, 10);
-    printDescending(arr, 10);
+    Ascending(arr, 10);
+    Descending(arr, 10);
 
     return 0;
 }
